@@ -18,5 +18,6 @@ echo "===docker new container run==="
 docker run -d \
         -e TZ=Asia/Seoul \
 	-e SPRING_PROFILES_ACTIVE=prod \
+	-v /root/images:/home/images \
         -P \
         --name ${service_name} onezo/god-life-${service_name}
